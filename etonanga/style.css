@@ -1,0 +1,245 @@
+/* RESET + BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    background-color: #1976d2;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar a:hover {
+    color: #ffeb3b;
+  }
+  
+  /* LOGIN & CONTENT CONTAINERS */
+  .login-container,
+  .dashboard-container {
+    background: white;
+    padding: 2rem;
+    margin: 3rem auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #125ea5;
+  }
+  
+  /* DASHBOARD CARD SECTIONS */
+  .card {
+    background: #fafafa;
+    border-left: 5px solid #1976d2;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card h2 {
+    margin-bottom: 1rem;
+    color: #1976d2;
+  }
+  
+  ul#necessitiesList {
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  
+  ul#necessitiesList li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .navbar h1 {
+      font-size: 1.25rem;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+  .dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .student-info,
+  .school-necessities {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Optional: Make student-info slightly narrower */
+  .student-info {
+    max-width: 45%;
+  }
+  
+  /* Optional: Keep school necessities wider */
+  .school-necessities {
+    max-width: 50%;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: linear-gradient(to right, #e0f0ff, #fde0e0);
+    padding: 40px;
+  }
+
+  .dashboard-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .dashboard-section {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .dashboard-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0077cc;
+    margin-bottom: 20px;
+  }
+
+  .section-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  select, button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  button {
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background: #005fa3;
+  }
+
+
+  
